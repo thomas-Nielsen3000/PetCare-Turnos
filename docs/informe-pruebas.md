@@ -131,8 +131,8 @@ Se utilizarán los siguientes estados:
 | CP35 | APROBADA | El backend rechazó una reserva superpuesta para la misma mascota. |
 | CP36 | APROBADA | El backend rechazó una reserva fuera del horario de atención. |
 | CP37 | APROBADA | El backend rechazó una reserva con menos de 3 horas de anticipación. |
-| CP38 | PENDIENTE | Se comprobará durante las pruebas generales. |
-| CP39 | PENDIENTE | Se comprobará durante las pruebas generales. |
+| CP38 | APROBADA | El cliente canceló correctamente el turno 7. Se verificó que su estado quedó en cancelado. |
+| CP39 | APROBADA | El cliente reprogramó correctamente el turno 7 del 23/11/2026 a las 10:00 a las 11:00. Se verificaron la nueva fecha, la duración y el precio. |
 | CP40 | APROBADA | El administrador consultó correctamente los datos del cliente y sus mascotas. |
 | CP41 | APROBADA | Se creó correctamente un horario de atención para el domingo. |
 | CP42 | APROBADA | Se modificó correctamente el horario creado. |
@@ -146,12 +146,22 @@ Se utilizarán los siguientes estados:
 
 ## 6. Herramientas previstas
 
-- Vitest: ejecución de pruebas automatizadas.
+- Node.js (node:test) y tsx: ejecución de pruebas automatizadas.
 - PowerShell: pruebas manuales de los endpoints de la API.
 - Navegador web: comprobación de la interfaz.
 - PostgreSQL: verificación de los datos almacenados.
 - Node.js y TypeScript: compilación y ejecución del backend.
 
+
+### 6.1. Resultados de las pruebas automatizadas
+
+- Comando ejecutado: npm.cmd test.
+- Resultado: 25 pruebas aprobadas y 0 fallidas.
+- Se verificaron validaciones de registro, inicio de sesión, mascotas, servicios y turnos.
+- Se probaron los middlewares de autenticación y permisos.
+- La compilación del backend (npm.cmd run build) finalizó correctamente.
+- La compilación del frontend (npm.cmd run build) finalizó correctamente.
+- La comprobación git diff --check no encontró errores de formato.
 ## 7. Criterios de aprobación
 
 El sistema se considerará correctamente probado cuando:
@@ -165,6 +175,8 @@ El sistema se considerará correctamente probado cuando:
 
 ## 8. Conclusión
 
-Este informe se actualizará durante el desarrollo de PetCare Turnos.
+Se realizaron pruebas funcionales, de validación, de autenticación, de permisos y de integración entre el frontend, el backend y la base de datos.
 
-Los resultados definitivos se incorporarán una vez ejecutadas las pruebas, indicando los casos aprobados, los errores encontrados y las soluciones aplicadas.
+Los 49 casos de prueba registrados cuentan con resultados documentados. Además, las 25 pruebas automatizadas del backend finalizaron correctamente, sin fallos.
+
+Las compilaciones del backend y del frontend finalizaron correctamente. Los resultados obtenidos permiten considerar completada la etapa de pruebas y corrección de errores.

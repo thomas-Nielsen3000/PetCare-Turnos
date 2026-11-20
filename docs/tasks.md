@@ -11,7 +11,7 @@
 - [x] T07 — Sistema de reservas y turnos.
 - [x] T08 — Panel administrativo.
 - [x] T09 — Desarrollo e integración del frontend.
-- [ ] T10 — Pruebas y corrección de errores.
+- [x] T10 — Pruebas y corrección de errores.
 - [ ] T11 — Despliegue de la aplicación.
 - [ ] T12 — Revisión y preparación de la entrega final.
 
@@ -169,7 +169,7 @@ Criterio de aceptación:
 
 ### T10 — Pruebas y corrección de errores
 
-Estado: PENDIENTE.
+Estado: COMPLETADA.
 
 Actividades:
 - Crear pruebas automatizadas.
