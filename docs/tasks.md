@@ -3,8 +3,8 @@
 ## Estado de las tareas
 
 - [x] T01 — Preparación inicial del proyecto.
-- [ ] T02 — Documentación y especificación.
-- [ ] T03 — Diseño y configuración de la base de datos.
+- [x] T02 — Documentación y especificación.
+- [x] T03 — Diseño y configuración de la base de datos.
 - [ ] T04 — Registro, autenticación y autorización.
 - [ ] T05 — Gestión de mascotas.
 - [ ] T06 — Gestión de servicios.
@@ -56,7 +56,7 @@ Criterio de aceptación:
 
 ### T03 — Base de datos
 
-Estado: PENDIENTE.
+Estado: COMPLETADA.
 
 Actividades:
 - Configurar PostgreSQL.
