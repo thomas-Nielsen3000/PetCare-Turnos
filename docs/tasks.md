@@ -10,7 +10,7 @@
 - [x] T06 — Gestión de servicios.
 - [x] T07 — Sistema de reservas y turnos.
 - [x] T08 — Panel administrativo.
-- [ ] T09 — Desarrollo e integración del frontend.
+- [x] T09 — Desarrollo e integración del frontend.
 - [ ] T10 — Pruebas y corrección de errores.
 - [ ] T11 — Despliegue de la aplicación.
 - [ ] T12 — Revisión y preparación de la entrega final.
@@ -150,7 +150,7 @@ Criterio de aceptación:
 
 ### T09 — Desarrollo e integración del frontend
 
-Estado: PENDIENTE.
+Estado: COMPLETADA.
 
 Actividades:
 - Crear página principal.

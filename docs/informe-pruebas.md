@@ -138,6 +138,11 @@ Se utilizarán los siguientes estados:
 | CP42 | APROBADA | Se modificó correctamente el horario creado. |
 | CP43 | APROBADA | Se desactivó correctamente el horario de prueba. |
 | CP44 | APROBADA | El endpoint administrativo rechazó el acceso sin autenticación mediante HTTP 401. |
+| CP45 | APROBADA | El frontend compiló correctamente mediante TypeScript y Vite, sin errores. |
+| CP46 | APROBADA | Se inició sesión correctamente con la cuenta de administrador y se visualizó el panel administrativo. |
+| CP47 | APROBADA | Se comprobó desde la interfaz web la creación de una mascota. |
+| CP48 | APROBADA | Se consultó correctamente el catálogo de servicios desde la interfaz web. |
+| CP49 | APROBADA | Se realizó correctamente una reserva de turno desde la interfaz web. |
 
 ## 6. Herramientas previstas
 
