@@ -12,7 +12,7 @@
 - [x] T08 — Panel administrativo.
 - [x] T09 — Desarrollo e integración del frontend.
 - [x] T10 — Pruebas y corrección de errores.
-- [ ] T11 — Despliegue de la aplicación.
+- [x] T11 — Despliegue de la aplicación.
 - [ ] T12 — Revisión y preparación de la entrega final.
 
 ## Detalle de las tareas
@@ -185,18 +185,29 @@ Criterio de aceptación:
 
 ### T11 — Despliegue
 
-Estado: PENDIENTE.
+Estado: COMPLETADA.
 
 Actividades:
-- Configurar la base de datos en la nube.
-- Desplegar el backend.
-- Desplegar el frontend.
-- Configurar variables de entorno.
-- Verificar la conexión entre servicios.
+- [x] Configurar PostgreSQL en Neon.
+- [x] Conectar el backend con la base de datos en la nube.
+- [x] Desplegar el backend en Render.
+- [x] Desplegar el frontend en Netlify.
+- [x] Configurar las variables de entorno necesarias.
+- [x] Configurar CORS para permitir la comunicación entre Netlify y Render.
+- [x] Verificar el endpoint público de salud de la API.
+- [x] Verificar la conexión del backend con PostgreSQL.
+- [x] Comprobar el inicio de sesión y el funcionamiento de la aplicación publicada.
 
 Criterio de aceptación:
 - La aplicación funciona desde una dirección pública.
+- El frontend se comunica correctamente con el backend.
+- El backend se conecta correctamente con PostgreSQL.
+- Las funcionalidades principales pueden utilizarse desde la aplicación desplegada.
 
+Servicios utilizados:
+- Frontend: https://petcare-turnos.netlify.app/
+- Backend: https://petcare-turnos.onrender.com
+- Base de datos: PostgreSQL alojado en Neon.
 ### T12 — Revisión y entrega final
 
 Estado: PENDIENTE.

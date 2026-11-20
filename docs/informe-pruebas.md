@@ -162,6 +162,7 @@ Se utilizarán los siguientes estados:
 - La compilación del backend (npm.cmd run build) finalizó correctamente.
 - La compilación del frontend (npm.cmd run build) finalizó correctamente.
 - La comprobación git diff --check no encontró errores de formato.
+
 ## 7. Criterios de aprobación
 
 El sistema se considerará correctamente probado cuando:
@@ -177,6 +178,50 @@ El sistema se considerará correctamente probado cuando:
 
 Se realizaron pruebas funcionales, de validación, de autenticación, de permisos y de integración entre el frontend, el backend y la base de datos.
 
-Los 49 casos de prueba registrados cuentan con resultados documentados. Además, las 25 pruebas automatizadas del backend finalizaron correctamente, sin fallos.
+Los 55 casos de prueba registrados cuentan con resultados documentados. Además, las 25 pruebas automatizadas del backend finalizaron correctamente, sin fallos.
 
-Las compilaciones del backend y del frontend finalizaron correctamente. Los resultados obtenidos permiten considerar completada la etapa de pruebas y corrección de errores.
+Las compilaciones del backend y del frontend finalizaron correctamente. También se verificó el despliegue público en Netlify y Render, la conexión con PostgreSQL en Neon y el funcionamiento de las principales funcionalidades de la aplicación. Los resultados obtenidos permiten considerar completadas las etapas de desarrollo, pruebas y despliegue.
+
+## 9. Pruebas de despliegue en producción
+
+Se realizó el despliegue de PetCare Turnos para permitir el acceso a la aplicación mediante direcciones públicas.
+
+### 9.1. Infraestructura desplegada
+
+| Componente | Servicio | Resultado |
+|---|---|---|
+| Frontend | Netlify | DESPLEGADO |
+| Backend | Render | DESPLEGADO |
+| Base de datos | PostgreSQL en Neon | CONECTADA |
+
+Direcciones públicas:
+
+- Frontend: https://petcare-turnos.netlify.app/
+- Backend: https://petcare-turnos.onrender.com
+- Endpoint de salud: https://petcare-turnos.onrender.com/api/health
+
+Se configuraron las variables de entorno necesarias para conectar los servicios. También se configuró CORS para permitir las solicitudes del frontend al backend.
+
+No se incluyen valores de contraseñas, tokens ni credenciales en este documento.
+
+### 9.2. Casos de prueba del despliegue
+
+| ID | Caso de prueba | Resultado esperado | Estado |
+|---|---|---|---|
+| CP50 | Acceder al frontend mediante la dirección pública de Netlify | La aplicación carga correctamente. | APROBADA |
+| CP51 | Consultar el endpoint público de salud del backend | La API responde con estado OK. | APROBADA |
+| CP52 | Comprobar la conexión del backend con PostgreSQL en Neon | La conexión se establece correctamente. | APROBADA |
+| CP53 | Iniciar sesión como administrador desde el frontend publicado | El administrador accede correctamente al panel. | APROBADA |
+| CP54 | Verificar la comunicación entre frontend y backend | Las solicitudes funcionan sin errores de conexión o CORS. | APROBADA |
+| CP55 | Comprobar las funcionalidades principales desde la aplicación publicada | Las funcionalidades principales se utilizan correctamente. | APROBADA |
+
+### 9.3. Incidencias y correcciones durante el despliegue
+
+Durante la publicación se detectaron y corrigieron los siguientes inconvenientes:
+
+- Se corrigió la ruta del directorio de publicación del frontend en Netlify.
+- Se corrigió la configuración de conexión a PostgreSQL en Neon utilizada por el backend desplegado.
+- Se configuró la variable FRONTEND_URL en Render para permitir el origen público de Netlify.
+- Se verificó nuevamente el inicio de sesión después de corregir la comunicación entre frontend y backend.
+
+Después de aplicar las correcciones, se verificó el funcionamiento de la aplicación publicada.
