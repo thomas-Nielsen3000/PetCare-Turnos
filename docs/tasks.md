@@ -6,7 +6,7 @@
 - [x] T02 — Documentación y especificación.
 - [x] T03 — Diseño y configuración de la base de datos.
 - [x] T04 — Registro, autenticación y autorización.
-- [ ] T05 — Gestión de mascotas.
+- [x] T05 — Gestión de mascotas.
 - [ ] T06 — Gestión de servicios.
 - [ ] T07 — Sistema de reservas y turnos.
 - [ ] T08 — Panel administrativo.
@@ -88,7 +88,7 @@ Criterio de aceptación:
 
 ### T05 — Gestión de mascotas
 
-Estado: PENDIENTE.
+Estado: COMPLETADA.
 
 Actividades:
 - Registrar mascotas.

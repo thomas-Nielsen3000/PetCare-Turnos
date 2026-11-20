@@ -4,6 +4,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import { pool } from "./config/database.js";
 import authRoutes from "./routes/auth.routes.js";
+import mascotasRoutes from "./routes/mascotas.routes.js";
 
 dotenv.config();
 
@@ -25,6 +26,8 @@ app.get("/api/health", (_req, res) => {
 });
 
 app.use("/api/auth", authRoutes);
+
+app.use("/api/mascotas", mascotasRoutes);
 
 app.get("/api/db-test", async (_req, res) => {
     try {

@@ -54,6 +54,13 @@ Se utilizarán pruebas automatizadas para verificar las reglas de negocio y redu
 | CP18 | Consultar los turnos de otro cliente | El acceso es rechazado. |
 | CP19 | Acceder al perfil con un JWT válido | El acceso es permitido. |
 | CP20 | Acceder al perfil con un JWT inválido | El acceso es rechazado con HTTP 401. |
+| CP21 | Listar las mascotas del cliente autenticado | Se muestran únicamente sus mascotas. |
+| CP22 | Consultar una mascota propia | Se muestran sus datos correctamente. |
+| CP23 | Modificar una mascota propia | Los cambios quedan guardados. |
+| CP24 | Eliminar una mascota propia | La mascota queda eliminada. |
+| CP25 | Intentar eliminar una mascota de otro cliente | La operación es rechazada con HTTP 404. |
+| CP26 | Intentar modificar una mascota de otro cliente | La operación es rechazada con HTTP 404. |
+| CP27 | Consultar una mascota después de un intento de modificación no autorizado | Los datos originales permanecen sin cambios. |
 
 ## 4. Registro de resultados
 
@@ -74,8 +81,8 @@ Se utilizarán los siguientes estados:
 | CP02 | APROBADA | Se rechazó un segundo registro con el mismo correo electrónico. |
 | CP03 | APROBADA | Se inició sesión con credenciales correctas y se generó un JWT. |
 | CP04 | PENDIENTE | Falta probar el inicio de sesión con contraseña incorrecta. |
-| CP05 | PENDIENTE | No ejecutada. |
-| CP06 | PENDIENTE | No ejecutada. |
+| CP05 | APROBADA | Se registró correctamente una mascota asociada al cliente autenticado. |
+| CP06 | APROBADA | Un segundo cliente recibió HTTP 404 al consultar una mascota ajena. |
 | CP07 | PENDIENTE | No ejecutada. |
 | CP08 | PENDIENTE | No ejecutada. |
 | CP09 | PENDIENTE | No ejecutada. |
@@ -90,6 +97,13 @@ Se utilizarán los siguientes estados:
 | CP18 | PENDIENTE | No ejecutada. |
 | CP19 | APROBADA | El perfil protegido permitió el acceso utilizando un JWT válido. |
 | CP20 | APROBADA | El perfil protegido rechazó un token inválido con error HTTP 401. |
+| CP21 | Listar las mascotas del cliente autenticado | Se muestran únicamente sus mascotas. |
+| CP22 | Consultar una mascota propia | Se muestran sus datos correctamente. |
+| CP23 | Modificar una mascota propia | Los cambios quedan guardados. |
+| CP24 | Eliminar una mascota propia | La mascota queda eliminada. |
+| CP25 | Intentar eliminar una mascota de otro cliente | La operación es rechazada con HTTP 404. |
+| CP26 | Intentar modificar una mascota de otro cliente | La operación es rechazada con HTTP 404. |
+| CP27 | Consultar una mascota después de un intento de modificación no autorizado | Los datos originales permanecen sin cambios. |
 
 ## 6. Herramientas previstas
 
