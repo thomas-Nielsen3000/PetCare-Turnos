@@ -29,7 +29,9 @@ También cuenta con funcionalidades administrativas para gestionar servicios, pr
 - Zod
 
 ### Pruebas
-- Vitest
+- Node.js Test Runner
+- TypeScript
+- tsx
 
 ## Estructura del proyecto
 
@@ -39,7 +41,7 @@ PetCare-Turnos/
 ├── backend/
 │   ├── src/
 │   ├── sql/
-│   └── test/
+│   └── tests/
 ├── docs/
 ├── AGENTS.md
 ├── README.md
@@ -106,9 +108,17 @@ Nunca subir credenciales reales al repositorio.
 
 ## Estado del proyecto
 
-Proyecto en desarrollo.
+Proyecto desarrollado, probado y desplegado.
 
-Fecha límite prevista de entrega: 31 de diciembre de 2026.
+La aplicación cuenta con un frontend publicado, una API desplegada y una base de datos PostgreSQL.
+
+Las pruebas automatizadas del backend y las compilaciones del frontend y backend fueron ejecutadas correctamente.
+
+## Aplicación desplegada
+
+- **Aplicación web:** https://petcare-turnos.netlify.app/
+- **API:** https://petcare-turnos.onrender.com
+- **Estado de la API:** https://petcare-turnos.onrender.com/api/health
 
 ## Repositorio
 

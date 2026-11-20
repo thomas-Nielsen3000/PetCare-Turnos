@@ -13,7 +13,7 @@
 - [x] T09 — Desarrollo e integración del frontend.
 - [x] T10 — Pruebas y corrección de errores.
 - [x] T11 — Despliegue de la aplicación.
-- [ ] T12 — Revisión y preparación de la entrega final.
+- [x] T12 — Revisión y preparación de la entrega final.
 
 ## Detalle de las tareas
 
@@ -208,17 +208,19 @@ Servicios utilizados:
 - Frontend: https://petcare-turnos.netlify.app/
 - Backend: https://petcare-turnos.onrender.com
 - Base de datos: PostgreSQL alojado en Neon.
+
 ### T12 — Revisión y entrega final
 
-Estado: PENDIENTE.
+Estado: COMPLETADA.
 
 Actividades:
-- Revisar README y documentación.
-- Verificar el repositorio público.
-- Revisar que no haya secretos publicados.
-- Comprobar las pruebas.
-- Comprobar los enlaces de despliegue.
-- Preparar la presentación final.
+- [x] Revisar README y documentación.
+- [x] Verificar el repositorio público.
+- [x] Revisar que no haya secretos publicados.
+- [x] Comprobar las pruebas.
+- [x] Comprobar los enlaces de despliegue.
+- [x] Dejar disponible el enlace del repositorio para la entrega.
 
 Criterio de aceptación:
 - Proyecto completo, documentado, probado y publicado.
+- Repositorio de GitHub disponible para su entrega.
