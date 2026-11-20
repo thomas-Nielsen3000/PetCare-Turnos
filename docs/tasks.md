@@ -7,7 +7,7 @@
 - [x] T03 — Diseño y configuración de la base de datos.
 - [x] T04 — Registro, autenticación y autorización.
 - [x] T05 — Gestión de mascotas.
-- [ ] T06 — Gestión de servicios.
+- [x] T06 — Gestión de servicios.
 - [ ] T07 — Sistema de reservas y turnos.
 - [ ] T08 — Panel administrativo.
 - [ ] T09 — Desarrollo e integración del frontend.
@@ -102,7 +102,7 @@ Criterio de aceptación:
 
 ### T06 — Gestión de servicios
 
-Estado: PENDIENTE.
+Estado: COMPLETADA.
 
 Actividades:
 - Consultar servicios.

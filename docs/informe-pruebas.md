@@ -61,6 +61,10 @@ Se utilizarán pruebas automatizadas para verificar las reglas de negocio y redu
 | CP25 | Intentar eliminar una mascota de otro cliente | La operación es rechazada con HTTP 404. |
 | CP26 | Intentar modificar una mascota de otro cliente | La operación es rechazada con HTTP 404. |
 | CP27 | Consultar una mascota después de un intento de modificación no autorizado | Los datos originales permanecen sin cambios. |
+| CP28 | Consultar todos los servicios como administrador | Se muestran los servicios activos e inactivos. |
+| CP29 | Crear un servicio como administrador | El servicio queda registrado correctamente. |
+| CP30 | Modificar un servicio como administrador | Los cambios quedan guardados. |
+| CP31 | Desactivar un servicio como administrador | El servicio queda desactivado sin eliminarse. |
 
 ## 4. Registro de resultados
 
@@ -97,13 +101,17 @@ Se utilizarán los siguientes estados:
 | CP18 | PENDIENTE | No ejecutada. |
 | CP19 | APROBADA | El perfil protegido permitió el acceso utilizando un JWT válido. |
 | CP20 | APROBADA | El perfil protegido rechazó un token inválido con error HTTP 401. |
-| CP21 | Listar las mascotas del cliente autenticado | Se muestran únicamente sus mascotas. |
-| CP22 | Consultar una mascota propia | Se muestran sus datos correctamente. |
-| CP23 | Modificar una mascota propia | Los cambios quedan guardados. |
-| CP24 | Eliminar una mascota propia | La mascota queda eliminada. |
-| CP25 | Intentar eliminar una mascota de otro cliente | La operación es rechazada con HTTP 404. |
-| CP26 | Intentar modificar una mascota de otro cliente | La operación es rechazada con HTTP 404. |
-| CP27 | Consultar una mascota después de un intento de modificación no autorizado | Los datos originales permanecen sin cambios. |
+| CP21 | APROBADA | Se listaron únicamente las mascotas del cliente autenticado. |
+| CP22 | APROBADA | Se consultaron correctamente los datos de una mascota propia. |
+| CP23 | APROBADA | Se modificaron correctamente los datos de una mascota propia. |
+| CP24 | APROBADA | Se eliminó correctamente una mascota propia. |
+| CP25 | APROBADA | Un cliente recibió HTTP 404 al intentar eliminar una mascota ajena. |
+| CP26 | APROBADA | Un cliente recibió HTTP 404 al intentar modificar una mascota ajena. |
+| CP27 | APROBADA | Se comprobó que los datos originales de la mascota no cambiaron tras un intento de modificación no autorizado. |
+| CP28 | APROBADA | El administrador consultó correctamente los servicios activos e inactivos. |
+| CP29 | APROBADA | El administrador creó el servicio Desparasitación. |
+| CP30 | APROBADA | El administrador modificó el precio y la duración del servicio. |
+| CP31 | APROBADA | El administrador desactivó el servicio sin eliminarlo de PostgreSQL. |
 
 ## 6. Herramientas previstas
 
