@@ -9,7 +9,7 @@
 - [x] T05 — Gestión de mascotas.
 - [x] T06 — Gestión de servicios.
 - [x] T07 — Sistema de reservas y turnos.
-- [ ] T08 — Panel administrativo.
+- [x] T08 — Panel administrativo.
 - [ ] T09 — Desarrollo e integración del frontend.
 - [ ] T10 — Pruebas y corrección de errores.
 - [ ] T11 — Despliegue de la aplicación.
@@ -136,7 +136,7 @@ Criterio de aceptación:
 
 ### T08 — Panel administrativo
 
-Estado: PENDIENTE.
+Estado: COMPLETADA.
 
 Actividades:
 - Consultar todos los turnos.

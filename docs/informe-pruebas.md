@@ -73,6 +73,11 @@ Se utilizarán pruebas automatizadas para verificar las reglas de negocio y redu
 | CP37 | Reservar con menos de 3 horas de anticipación | La reserva es rechazada. |
 | CP38 | Cancelar un turno válido | El turno cambia a estado cancelado. |
 | CP39 | Modificar la fecha y hora de un turno | Se actualiza el horario respetando las validaciones. |
+| CP40 | Consultar el detalle de un cliente como administrador | Se muestran los datos del cliente y sus mascotas. |
+| CP41 | Crear un horario como administrador | El horario queda registrado correctamente. |
+| CP42 | Modificar un horario como administrador | Los cambios quedan guardados. |
+| CP43 | Desactivar un horario como administrador | El horario queda desactivado. |
+| CP44 | Acceder a las rutas administrativas sin autenticación | El acceso es rechazado con HTTP 401. |
 
 ## 4. Registro de resultados
 
@@ -128,6 +133,11 @@ Se utilizarán los siguientes estados:
 | CP37 | APROBADA | El backend rechazó una reserva con menos de 3 horas de anticipación. |
 | CP38 | PENDIENTE | Se comprobará durante las pruebas generales. |
 | CP39 | PENDIENTE | Se comprobará durante las pruebas generales. |
+| CP40 | APROBADA | El administrador consultó correctamente los datos del cliente y sus mascotas. |
+| CP41 | APROBADA | Se creó correctamente un horario de atención para el domingo. |
+| CP42 | APROBADA | Se modificó correctamente el horario creado. |
+| CP43 | APROBADA | Se desactivó correctamente el horario de prueba. |
+| CP44 | APROBADA | El endpoint administrativo rechazó el acceso sin autenticación mediante HTTP 401. |
 
 ## 6. Herramientas previstas
 
