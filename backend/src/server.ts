@@ -3,6 +3,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import { pool } from "./config/database.js";
+import authRoutes from "./routes/auth.routes.js";
 
 dotenv.config();
 
@@ -15,6 +16,15 @@ app.use(cors({
 }));
 
 app.use(express.json());
+
+app.get("/api/health", (_req, res) => {
+    res.status(200).json({
+        status: "OK",
+        message: "PetCare Turnos API funcionando correctamente"
+    });
+});
+
+app.use("/api/auth", authRoutes);
 
 app.get("/api/db-test", async (_req, res) => {
     try {

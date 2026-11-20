@@ -5,7 +5,7 @@
 - [x] T01 — Preparación inicial del proyecto.
 - [x] T02 — Documentación y especificación.
 - [x] T03 — Diseño y configuración de la base de datos.
-- [ ] T04 — Registro, autenticación y autorización.
+- [x] T04 — Registro, autenticación y autorización.
 - [ ] T05 — Gestión de mascotas.
 - [ ] T06 — Gestión de servicios.
 - [ ] T07 — Sistema de reservas y turnos.
@@ -71,7 +71,7 @@ Criterio de aceptación:
 
 ### T04 — Registro, autenticación y autorización
 
-Estado: PENDIENTE.
+Estado: COMPLETADA.
 
 Actividades:
 - Implementar registro de clientes.

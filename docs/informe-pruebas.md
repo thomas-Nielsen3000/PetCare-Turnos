@@ -52,6 +52,8 @@ Se utilizarán pruebas automatizadas para verificar las reglas de negocio y redu
 | CP16 | Intentar administrar servicios como cliente | La operación es rechazada. |
 | CP17 | Reservar un servicio desactivado | La reserva es rechazada. |
 | CP18 | Consultar los turnos de otro cliente | El acceso es rechazado. |
+| CP19 | Acceder al perfil con un JWT válido | El acceso es permitido. |
+| CP20 | Acceder al perfil con un JWT inválido | El acceso es rechazado con HTTP 401. |
 
 ## 4. Registro de resultados
 
@@ -68,10 +70,10 @@ Se utilizarán los siguientes estados:
 
 | ID | Estado | Observaciones |
 |---|---|---|
-| CP01 | PENDIENTE | No ejecutada. |
-| CP02 | PENDIENTE | No ejecutada. |
-| CP03 | PENDIENTE | No ejecutada. |
-| CP04 | PENDIENTE | No ejecutada. |
+| CP01 | APROBADA | Se registró correctamente un cliente en PostgreSQL. |
+| CP02 | APROBADA | Se rechazó un segundo registro con el mismo correo electrónico. |
+| CP03 | APROBADA | Se inició sesión con credenciales correctas y se generó un JWT. |
+| CP04 | PENDIENTE | Falta probar el inicio de sesión con contraseña incorrecta. |
 | CP05 | PENDIENTE | No ejecutada. |
 | CP06 | PENDIENTE | No ejecutada. |
 | CP07 | PENDIENTE | No ejecutada. |
@@ -86,13 +88,16 @@ Se utilizarán los siguientes estados:
 | CP16 | PENDIENTE | No ejecutada. |
 | CP17 | PENDIENTE | No ejecutada. |
 | CP18 | PENDIENTE | No ejecutada. |
+| CP19 | APROBADA | El perfil protegido permitió el acceso utilizando un JWT válido. |
+| CP20 | APROBADA | El perfil protegido rechazó un token inválido con error HTTP 401. |
 
 ## 6. Herramientas previstas
 
 - Vitest: ejecución de pruebas automatizadas.
-- Postman: pruebas manuales de los endpoints de la API.
+- PowerShell: pruebas manuales de los endpoints de la API.
 - Navegador web: comprobación de la interfaz.
 - PostgreSQL: verificación de los datos almacenados.
+- Node.js y TypeScript: compilación y ejecución del backend.
 
 ## 7. Criterios de aprobación
 
