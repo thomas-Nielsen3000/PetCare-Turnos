@@ -6,6 +6,7 @@ import { pool } from "./config/database.js";
 import authRoutes from "./routes/auth.routes.js";
 import mascotasRoutes from "./routes/mascotas.routes.js";
 import serviciosRoutes from "./routes/servicios.routes.js";
+import turnosRoutes from "./routes/turnos.routes.js";
 
 dotenv.config();
 
@@ -31,6 +32,8 @@ app.use("/api/auth", authRoutes);
 app.use("/api/mascotas", mascotasRoutes);
 
 app.use("/api/servicios", serviciosRoutes);
+
+app.use("/api/turnos", turnosRoutes);
 
 app.get("/api/db-test", async (_req, res) => {
     try {

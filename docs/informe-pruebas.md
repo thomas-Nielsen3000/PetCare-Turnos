@@ -65,6 +65,14 @@ Se utilizarán pruebas automatizadas para verificar las reglas de negocio y redu
 | CP29 | Crear un servicio como administrador | El servicio queda registrado correctamente. |
 | CP30 | Modificar un servicio como administrador | Los cambios quedan guardados. |
 | CP31 | Desactivar un servicio como administrador | El servicio queda desactivado sin eliminarse. |
+| CP32 | Crear una solicitud de turno válida | El turno queda registrado como pendiente. |
+| CP33 | Listar los turnos como administrador | Se muestran todos los turnos. |
+| CP34 | Consultar un turno por ID | Se muestran los datos del turno. |
+| CP35 | Reservar un turno superpuesto para la misma mascota | La reserva es rechazada. |
+| CP36 | Reservar fuera del horario de atención | La reserva es rechazada. |
+| CP37 | Reservar con menos de 3 horas de anticipación | La reserva es rechazada. |
+| CP38 | Cancelar un turno válido | El turno cambia a estado cancelado. |
+| CP39 | Modificar la fecha y hora de un turno | Se actualiza el horario respetando las validaciones. |
 
 ## 4. Registro de resultados
 
@@ -112,6 +120,14 @@ Se utilizarán los siguientes estados:
 | CP29 | APROBADA | El administrador creó el servicio Desparasitación. |
 | CP30 | APROBADA | El administrador modificó el precio y la duración del servicio. |
 | CP31 | APROBADA | El administrador desactivó el servicio sin eliminarlo de PostgreSQL. |
+| CP32 | APROBADA | Se creó correctamente una solicitud de turno con estado pendiente. |
+| CP33 | APROBADA | El administrador consultó correctamente el listado de turnos. |
+| CP34 | APROBADA | Se consultaron correctamente los datos de un turno mediante su ID. |
+| CP35 | APROBADA | El backend rechazó una reserva superpuesta para la misma mascota. |
+| CP36 | APROBADA | El backend rechazó una reserva fuera del horario de atención. |
+| CP37 | APROBADA | El backend rechazó una reserva con menos de 3 horas de anticipación. |
+| CP38 | PENDIENTE | Se comprobará durante las pruebas generales. |
+| CP39 | PENDIENTE | Se comprobará durante las pruebas generales. |
 
 ## 6. Herramientas previstas
 

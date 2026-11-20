@@ -8,7 +8,7 @@
 - [x] T04 — Registro, autenticación y autorización.
 - [x] T05 — Gestión de mascotas.
 - [x] T06 — Gestión de servicios.
-- [ ] T07 — Sistema de reservas y turnos.
+- [x] T07 — Sistema de reservas y turnos.
 - [ ] T08 — Panel administrativo.
 - [ ] T09 — Desarrollo e integración del frontend.
 - [ ] T10 — Pruebas y corrección de errores.
@@ -117,10 +117,10 @@ Criterio de aceptación:
 
 ### T07 — Sistema de reservas y turnos
 
-Estado: PENDIENTE.
+Estado: COMPLETADA.
 
 Actividades:
-- Consultar disponibilidad.
+- Validar la disponibilidad según los horarios de atención.
 - Crear reservas.
 - Validar anticipación mínima.
 - Validar horarios de atención.
